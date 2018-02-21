@@ -60,7 +60,7 @@
         <version.spring.framework>4.3.9.RELEASE</version.spring.framework>
         <!-- EAP component version management BOM -->
         <version.server.bom>11.0.0.Final</version.server.bom>
-        
+
         <version.jboss.spec.javaee.7.0>1.1.0.Final</version.jboss.spec.javaee.7.0>
 
         <version.jaxws-tools-maven-plugin>1.2.0.Final</version.jaxws-tools-maven-plugin>
@@ -449,6 +449,7 @@
                 <module>hibernate</module>
                 <module>inter-app</module>
                 <module>jaxrs-client</module>
+                <module>jaxrs-jwt</module>
                 <module>jaxws-addressing</module>
                 <module>jaxws-ejb</module>
                 <module>jaxws-pojo</module>
@@ -567,7 +568,7 @@
                 <module>spring-kitchensink-springmvctest/functional-tests</module>
             </modules>
         </profile>
-      
+
         <profile>
             <!-- An optional Arquillian testing profile that executes tests in your JBoss EAP instance.
                  This profile will start a new JBoss EAP instance, and execute the test, shutting it down when done.
@@ -643,7 +644,7 @@
             </modules>
             <build>
                 <plugins>
-              
+
                     <plugin>
                         <groupId>org.wildfly.maven.plugins</groupId>
                         <artifactId>quickstart-documentation-plugin</artifactId>
@@ -686,7 +687,7 @@
                             <sourceDirectory>.</sourceDirectory>
                             <sourceDocumentName>README.adoc</sourceDocumentName>
                             <outputFile>README.html</outputFile>
-                            
+
                         </configuration>
                         <executions>
                             <execution>
@@ -698,7 +699,7 @@
                             </execution>
                         </executions>
                     </plugin>
-             
+
                 </plugins>
             </build>
         </profile>
